@@ -25,17 +25,17 @@ This helped reinforce proper Git repository structure and version control best p
 ## Day 2 – AWS EC2 and Apache Web Server Setup
 
 ### Objective
-Launch an EC2 instance on AWS and deploy an Apache web server to
+Launch an EC2 instance on AWS and deploy an Apache web server.
 
 ### Web Access Verification
 The Apache default test page was accessed successfully using the EC2
 public IP address through a web browser.validate compute, networking, and basic server configuration.
 
 ### EC2 Instance Setup
-An EC2 instance was launched using Amazon Linux with a t2.micro
+An EC2 instance was launched using Amazon Linux with a t3.micro
 instance type. A key pair was created for secure SSH access, and a
 security group was configured to allow SSH (port 22) and HTTP
-(port 80) traffic.
+(port 80) traffic Custom Tcp (port 3000) and Custom TCP (Port 9090).
 
 ### SSH Access
 The EC2 instance was accessed securely using SSH and a PEM key file,
@@ -46,17 +46,21 @@ confirming successful connectivity to the server.
 ### Apache Web Server Installation
 Apache HTTP Server was installed, started, and enabled to run on
 system startup.
-
-sudo yum install httpd -y
+ 
+```bash
+sudo yum install httpd -y 
 sudo systemctl start httpd
 sudo systemctl enable httpd
+```
 
 ### Service Validation
 The Apache service status was verified, and it was confirmed that the
 server was listening on port 80.
 
+```bash
 sudo systemctl status httpd
 sudo netstat -tulnp | grep 80
+```
 
 ### Web Access Verification
 The Apache default test page was accessed successfully using the EC2
