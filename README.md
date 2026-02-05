@@ -150,7 +150,7 @@ sudo netstat -tulnp | grep 80
 * Accessed the Apache default test page using the EC2 public IP address via a web browser.
 * This validated end-to-end connectivity across the compute, networking, and application layers.
 
-[Apache Web Page](screenshots/Screenshot_day2_apache_works.png)
+[Apache Web Page](screenshots/Screenshot_day-2_apache_work.png)
 
 ---
 
