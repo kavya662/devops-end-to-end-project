@@ -116,7 +116,7 @@ This configuration supports both web access and future integrations such as CI/C
 * Accessed the EC2 instance securely using SSH and the PEM key file.
 * Successful login confirmed correct subnet routing, internet gateway configuration, and security group rules.
 
-![EC2 Instance Running](screenshots\Screenshot_day-2_Devops_Project_EC2_instance_Running.png)
+![EC2 Instance Running](screenshots/Screenshot_day-2_Devops_Project_EC2_instance_Running.png)
 
 ---
 
@@ -150,7 +150,7 @@ sudo netstat -tulnp | grep 80
 * Accessed the Apache default test page using the EC2 public IP address via a web browser.
 * This validated end-to-end connectivity across the compute, networking, and application layers.
 
-[Apache Web Page](screenshots\Screenshot_day2_apache_works.png)
+[Apache Web Page](screenshots/Screenshot_day2_apache_works.png)
 
 ---
 
